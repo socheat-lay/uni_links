@@ -34,3 +34,6 @@ build/
 
 example/android/app/bin/
 doc/
+
+# FVM Version Cache
+.fvm/
