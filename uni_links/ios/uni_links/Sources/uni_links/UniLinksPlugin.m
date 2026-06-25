@@ -1,4 +1,4 @@
-#import "UniLinksPlugin.h"
+#import "./include/uni_links/UniLinksPlugin.h"
 
 static NSString *const kMessagesChannel = @"uni_links/messages";
 static NSString *const kEventsChannel = @"uni_links/events";

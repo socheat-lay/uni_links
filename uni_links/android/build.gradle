@@ -1,5 +1,5 @@
-group 'name.avioli.unilinks'
-version '0.4.0'
+group "name.avioli.unilinks"
+version "0.4.0"
 
 buildscript {
     repositories {
@@ -8,7 +8,7 @@ buildscript {
     }
 
     dependencies {
-        classpath 'com.android.tools.build:gradle:8.7.1'
+        classpath "com.android.tools.build:gradle:8.11.1"
     }
 }
 
@@ -19,17 +19,18 @@ rootProject.allprojects {
     }
 }
 
-apply plugin: 'com.android.library'
+apply plugin: "com.android.library"
 
 android {
-    compileSdkVersion 35
     namespace "name.avioli.unilinks"
+    compileSdk 35
 
     defaultConfig {
-        minSdkVersion 16
+        minSdk 16
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
-    lintOptions {
-        disable 'InvalidPackage'
+
+    lint {
+        disable "InvalidPackage"
     }
 }
